@@ -1,13 +1,88 @@
 /* Estilos generales */
 body {
-
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #e2e0e0;
   color: #333;
 }
+/* Estilos para el encabezado */
+.header {
+  background-color: #f4f4f9;
+  padding: 1rem 0;
+  text-align: right; 
+}
+/* Configuracion de navbar */
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end; 
+  padding-right: 20px;
+}
+.navbar ul li {
+  margin: 0 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #0073e6;
+}
+.navbar ul li:hover {
+  text-decoration: underline;
+}
 
+/* Contenedor principal para el contenido y la imagen */
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+/* Estilos para el contenido de texto (izquierda) */
+.text-content {
+  max-width: 50%;
+  text-align: left;
+}
+
+/* Estilos para el título principal */
+h1 {
+  font-size: 3rem;
+  margin-top: 0;
+  color: #3392da;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #555;
+  margin: 1rem 0;
+}
+
+/* Estilos para el botón */
+.cta-button {
+  background-color: transparent;
+  color: #0073e6;
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  border: 2px solid #0073e6;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #0073e6;
+  color: white;
+}
+
+.image-content img {
+  width: 450px; 
+  height: 450px; 
+  margin-left: 50px;
+}
 /* Sección de Companies */
 .section.companies {
   padding: 50px 20px;
@@ -96,87 +171,6 @@ h4 {
   width: 50px; 
   height: auto;
 }
-
-/* Estilos para el encabezado */
-.header {
-  background-color: #f4f4f9;
-  padding: 1rem 0;
-  text-align: right; 
-}
-
-.navbar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: flex-end; 
-  padding-right: 20px;
-}
-
-.navbar ul li {
-  margin: 0 1rem;
-  font-size: 1rem;
-  cursor: pointer;
-  color: #0073e6;
-}
-
-.navbar ul li:hover {
-  text-decoration: underline;
-}
-
-/* Contenedor principal para el contenido y la imagen */
-.main-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem;
-  gap: 2rem;
-}
-
-/* Estilos para el contenido de texto (izquierda) */
-.text-content {
-  max-width: 50%;
-  text-align: left;
-}
-
-/* Estilos para el título principal */
-h1 {
-  font-size: 3rem;
-  margin-top: 0;
-  color: #3392da;
-}
-
-h2 {
-  font-size: 1.5rem;
-  color: #555;
-  margin: 1rem 0;
-}
-
-/* Estilos para el botón */
-.cta-button {
-  background-color: transparent;
-  color: #0073e6;
-  padding: 0.8rem 2rem;
-  text-decoration: none;
-  border: 2px solid #0073e6;
-  border-radius: 5px;
-  font-weight: bold;
-  display: inline-block;
-  margin-top: 1rem;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.cta-button:hover {
-  background-color: #0073e6;
-  color: white;
-}
-
-
-.image-content img {
-  width: 450px; 
-  height: 450px; 
-  margin-left: 50px;
-}
 /* Estilos para la sección "Soluciones Personalizadas" */
 .custom-solutions {
   padding: 50px 20px;
@@ -223,10 +217,11 @@ h2 {
   margin: 20px 0;
 }
 
+/* Alinea la imagen a la izquierda */
 .custom-solutions .container {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Alinea la imagen a la izquierda */
+  justify-content: flex-start; 
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
@@ -263,10 +258,11 @@ h2 {
   margin: 20px 0;
 }
 
+/* Alinea la imagen a la derecha */
 .next-big-thing .container {
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* Alinea la imagen a la derecha */
+  justify-content: flex-end; 
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
@@ -307,11 +303,12 @@ h2 {
   color: white;
 }
 
+/* Asegura que la imagen esté pegada a la derecha */
 .next-big-thing .image-content img {
   max-width: 450px;
   height: auto;
   border-radius: 10px;
-  margin-right: 0; /* Asegura que la imagen esté pegada a la derecha */
+  margin-right: 0; 
 }
 
 /* style footer contactos" */
@@ -362,7 +359,7 @@ footer {
 }
 
 .footer-column ul li a:hover {
-  text-decoration: underline;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 390px) {
@@ -373,9 +370,10 @@ footer {
         align-items: center;
         padding: 0;
     }
-
+  
+ /* compactar texto */
     .navbar ul li {
-        font-size: 0.9rem; /* Texto más compacto */
+        font-size: 0.9rem;
         margin: 5px 0;
     }
 
@@ -461,12 +459,14 @@ footer {
     .footer-column {
         min-width: 100%;
     } 
+    /* Mostrar icono hamburguesa */
     menu-toggle {
-        display: block; /* Mostrar icono hamburguesa */
+        display: block; 
     }
 
+/* Ocultar menú por defecto */
     .nav-links {
-        display: none; /* Ocultar menú por defecto */
+        display: none; 
         flex-direction: column;
         position: absolute;
         top: 60px;
@@ -476,8 +476,9 @@ footer {
         padding: 10px;
     }
 
+/* Mostrar menú cuando está activo */
     .nav-links.show {
-        display: flex; /* Mostrar menú cuando está activo */
+        display: flex; 
     }
 
 }
